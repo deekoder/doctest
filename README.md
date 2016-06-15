@@ -10,13 +10,13 @@ This document assumes that you have one of the following Java Environments setup
 
 ## Download from maven
 
-```xml
+~~~xml
 <dependency>
     <groupId>io.minio</groupId>
     <artifactId>minio</artifactId>
     <version>2.0.0</version>
 </dependency>
-```
+~~~
 
 ## Download from gradle
 
