@@ -10,7 +10,7 @@ This document assumes that you have one of the following Java Environments setup
 
 ## Download from maven
 
-``` xml 
+```xml 
 <dependency>
     <groupId>io.minio</groupId>
     <artifactId>minio</artifactId>
@@ -35,11 +35,11 @@ This example program connects to an object storage server, makes a bucket on the
 
 You need three items in order to connect to an object storage server.
 
-```java
+~~~java
 
 MinioClient minioClient = new MinioClient("https://play.minio.io:9000", "Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG");
 
-```
+~~~
 
 | Params     | Desc |  
 | :------- | :---- |  
@@ -50,7 +50,7 @@ MinioClient minioClient = new MinioClient("https://play.minio.io:9000", "Q3AM3UQ
 We will use the Minio server running at [https://play.minio.io:9000](https://play.minio.io:9000) in this example. Feel free to use this service for testing and development. Access credentials shown in this example are open to the public.
 
 #### FileUploader.java
-```java
+~~~java
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.security.InvalidKeyException;
@@ -83,8 +83,8 @@ public class FileUploader {
     }
   }
 }
- 
-```
+~~~
+
 #### Compile FileUploader
 ```bash
 $ javac -cp "minio-2.0.0.jar"  FileUploader.java
