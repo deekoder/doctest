@@ -39,8 +39,8 @@ You need three items in order to connect to an object storage server.
         MinioClient minioClient = new MinioClient("https://play.minio.io:9000", "Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG");
 ```
 
-| Params     | Desc |  
-| :------- | :---- |  
+| Params  | Description |  
+| ------- | ----------- |  
 | Endpoint | URL to object storage service. |  
 | Access Key | Access key is like user ID that uniquely identifies your account. |   
 | Secret Key | Secret key is the password to your account. |
