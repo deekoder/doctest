@@ -20,10 +20,10 @@ This document assumes that you have one of the following Java Environments setup
 
 ## Download from gradle
 
-```gradle
-dependencies {
-    compile 'io.minio:minio:2.0.0'
-}
+```
+        dependencies {
+                compile 'io.minio:minio:2.0.0'
+        }
 ```
 
 ## Download from JAR
@@ -39,11 +39,11 @@ You need three items in order to connect to an object storage server.
         MinioClient minioClient = new MinioClient("https://play.minio.io:9000", "Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG");
 ```
 
-| Params  | Description |  
-| ------- | ----------- |  
-| Endpoint | URL to object storage service. |  
-| Access Key | Access key is like user ID that uniquely identifies your account. |   
-| Secret Key | Secret key is the password to your account. |
+        | Params  | Description |  
+        | ------- | ----------- |  
+        | Endpoint | URL to object storage service. |  
+        | Access Key | Access key is like user ID that uniquely identifies your account. |   
+        | Secret Key | Secret key is the password to your account. |
 
 We will use the Minio server running at [https://play.minio.io:9000](https://play.minio.io:9000) in this example. Feel free to use this service for testing and development. Access credentials shown in this example are open to the public.
 
