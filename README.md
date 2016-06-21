@@ -50,14 +50,15 @@ We will use the Minio server running at [https://play.minio.io:9000](https://pla
 
 #### FileUploader.java
 ```java
-import java.io.IOException;
-import java.security.NoSuchAlgorithmException;
-import java.security.InvalidKeyException;
-import org.xmlpull.v1.XmlPullParserException;
-import io.minio.MinioClient;
-import io.minio.errors.MinioException;
-         
-         public class FileUploader {
+
+        import java.io.IOException;
+        import java.security.NoSuchAlgorithmException;
+        import java.security.InvalidKeyException;
+        import org.xmlpull.v1.XmlPullParserException;
+        import io.minio.MinioClient;
+        import io.minio.errors.MinioException;
+        
+        public class FileUploader {
                 public static void main(String[] args) throws NoSuchAlgorithmException, IOException, InvalidKeyException, XmlPullParserException {
                         try {
                         // Create a minioClient with the Minio Server name, Port, Access key and Secret key.
