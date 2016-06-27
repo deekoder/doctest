@@ -68,7 +68,6 @@ puts markdown.to_html
 
 #### FileUploader.java
 ~~~
-
         import java.io.IOException;
         import java.security.NoSuchAlgorithmException;
         import java.security.InvalidKeyException;
@@ -106,13 +105,14 @@ $ javac -cp "minio-2.0.0.jar"  FileUploader.java
 ```
 
 #### Run FileUploader
-```bash
+```
 $ java -cp "minio-2.0.0.jar" FileUploader.java
 /tmp/asiaphotos.zip is successfully uploaded as asiaphotos.zip in asiatrip bucket.
 
 $  mc ls play/asiatrip/
 [2016-06-02 18:10:29 PDT]  82KiB asiaphotos.zip
 ```
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
