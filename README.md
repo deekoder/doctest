@@ -26,6 +26,15 @@ compile 'io.minio:minio:2.0.0'
 }
 ```
 
+
+<pre>
+<code class="language-javascript">
+
+    look at my html stuff here
+
+</code>
+</pre>
+
 ## Download from JAR
 
 You can download the latest [JAR](http://repo1.maven.org/maven2/io/minio/minio/2.0.0/) directly from maven.
@@ -35,8 +44,8 @@ This example program connects to an object storage server, makes a bucket on the
 
 You need three items in order to connect to an object storage server.
 
-~~~.language-javascript
-        MinioClient minioClient = new MinioClient("https://play.minio.io:9000", "Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG");
+~~~
+MinioClient minioClient = new MinioClient("https://play.minio.io:9000", "Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG");
 ~~~
 
 
