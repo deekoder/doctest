@@ -67,7 +67,7 @@ puts markdown.to_html
 
 
 #### FileUploader.java
-~~~.language-java
+~~~.language-javascript
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.security.InvalidKeyException;
