@@ -42,7 +42,7 @@ You need three items in order to connect to an object storage server.
 
 | Params  | Description |  
 | ------- | ----------- |  
-| Endpoint | URL to object storage service. |  
+| Endpoint| URL to object storage service. |  
 | Access Key | Access key is like user ID that uniquely identifies your account. |   
 | Secret Key | Secret key is the password to your account. |
 
