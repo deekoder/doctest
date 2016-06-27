@@ -11,19 +11,19 @@ This document assumes that you have one of the following Java Environments setup
 ## Download from maven
 
 ``` 
-        <dependency>
-            <groupId>io.minio</groupId>
-            <artifactId>minio</artifactId>
-            <version>2.0.0</version>
-        </dependency>
+<dependency>
+        <groupId>io.minio</groupId>
+        <artifactId>minio</artifactId>
+        <version>2.0.0</version>
+</dependency>
 ```
 
 ## Download from gradle
 
 ```
-        dependencies {
-                compile 'io.minio:minio:2.0.0'
-        }
+dependencies {
+compile 'io.minio:minio:2.0.0'
+}
 ```
 
 ## Download from JAR
@@ -47,6 +47,13 @@ You need three items in order to connect to an object storage server.
 | Secret Key | Secret key is the password to your account. |
 
 We will use the Minio server running at [https://play.minio.io:9000](https://play.minio.io:9000) in this example. Feel free to use this service for testing and development. Access credentials shown in this example are open to the public.
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 
 #### FileUploader.java
 ```java
