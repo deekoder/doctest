@@ -220,12 +220,11 @@ Use this option to set a custom config path.
 |[**policy** - Set public policy on bucket or prefix](#policy)   |[**session** - Manage saved sessions](#session)   | [**config** - Manage config file](#config)  |
 | [**update** - Manage software updates](#update)  | [**version** - Show version](#version)  |   |
 
-<a name="ls">
+<a name="ls"> </a>
 
-##  Command `ls` - List Objects
+###  Command `ls` - List Objects
 
 `ls` command lists files, objects and objects. Use `--incomplete` flag to list partially copied content.
-
 
 ```sh
 USAGE:
@@ -248,7 +247,7 @@ $ mc ls play
 [2016-04-08 20:58:18 IST]     0B mybucket/
 ```
 <a name="mb">
-## Command `mb` - Make a Bucket
+### Command `mb` - Make a Bucket
 
 `mb` command creates a new bucket on an object storage. On a filesystem, it behaves like `mkdir -p` command. Bucket is equivalent of a drive or mount point in filesystems and should not be treated as folders. Minio does not place any limits on the number of buckets created per user. 
 On Amazon S3, each account is limited to 100 buckets. Please refer to [Buckets Restrictions and Limitations on S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html) for more information.  
@@ -272,7 +271,7 @@ Bucket created successfully ‘play/mybucket’.
 
 <a name="cat">
 
-## Command `cat` - Concatenate Objects
+### Command `cat` - Concatenate Objects
 
 `cat` command concatenates contents of a file or object to another. You may also use it to simply display the contents to stdout
 
