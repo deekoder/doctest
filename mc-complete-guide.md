@@ -246,7 +246,7 @@ $ mc ls play
 [2016-03-28 21:53:49 IST]     0B guestbucket/
 [2016-04-08 20:58:18 IST]     0B mybucket/
 ```
-<a name="mb">
+<a name="mb"></a>
 ### Command `mb` - Make a Bucket
 
 `mb` command creates a new bucket on an object storage. On a filesystem, it behaves like `mkdir -p` command. Bucket is equivalent of a drive or mount point in filesystems and should not be treated as folders. Minio does not place any limits on the number of buckets created per user. 
@@ -269,7 +269,7 @@ $ mc mb play/mybucket
 Bucket created successfully ‘play/mybucket’.
 ```
 
-<a name="cat">
+<a name="cat"></a>
 
 ### Command `cat` - Concatenate Objects
 
@@ -289,8 +289,8 @@ FLAGS:
 $ mc cat play/mybucket/myobject.txt
 Hello Minio!!
 ```
-<a name="pipe">
-## Command `pipe` - Pipe to Object
+<a name="pipe"></a>
+### Command `pipe` - Pipe to Object
 ``pipe`` command copies contents of stdin to a target. When no target is specified, it writes to stdout.
 
 ```sh
@@ -307,8 +307,8 @@ FLAGS:
 $ mysqldump -u root -p ******* accountsdb | mc pipe s3/ferenginar/backups/accountsdb-oct-9-2015.sql
 ```
 
-<a name="cp">
-## Command `cp` - Copy Objects
+<a name="cp"></a>
+### Command `cp` - Copy Objects
 `cp` command copies data from one or more sources to a target.  All copy operations to object storage are verified with MD5SUM checksums. Interrupted or failed copy operations can be resumed from the point of failure.
 
 ```sh
@@ -326,8 +326,8 @@ FLAGS:
 $ mc cp myobject.txt play/mybucket
 myobject.txt:    14 B / 14 B  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  100.00 % 41 B/s 0
 ```
-<a name="rm">
-## Command `rm` - Remove Buckets and Objects
+<a name="rm"></a>
+### Command `rm` - Remove Buckets and Objects
 Use `rm` command to remove file or bucket
 
 ```sh
@@ -365,8 +365,8 @@ Removed ‘play/mybucket/mydvd.iso’.
 Removed 'play/mybucket/backup.tgz’.
 ```
 
-<a name="share">
-## Command `share` - Share Access
+<a name="share"></a>
+### Command `share` - Share Access
 
 `share` command securely grants upload or download access to object storage. This access is only temporary and it is safe to share with remote users and applications. If you want to grant permanent access, you may look at `mc policy` command instead.
 
@@ -408,7 +408,7 @@ Expire: 0 days 4 hours 0 minutes 0 seconds
 Share: https://play.minio.io:9000/mybucket/myobject.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=Q3AM3UQ867SPQQA43P2F%2F20160408%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160408T182008Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1527fc8f21a3a7e39ce3c456907a10b389125047adc552bcd86630b9d459b634
 ```
 
-### Sub-command `share upload` - Share Upload
+#### Sub-command `share upload` - Share Upload
 
 `share upload` command generates a ‘curl’ command to upload objects without requiring access/secret keys. Expiry option sets the maximum validity period (no more than 7 days), beyond which the access is revoked automatically. Content-type option restricts uploads to only certain type of files.
 
@@ -432,7 +432,7 @@ Expire: 7 days 0 hours 0 minutes 0 seconds
 Share: curl https://play.minio.io:9000/mybucket -F x-amz-date=20160408T182356Z -F x-amz-signature=de343934bd0ba38bda0903813b5738f23dde67b4065ea2ec2e4e52f6389e51e1 -F bucket=mybucket -F policy=eyJleHBpcmF0aW9uIjoiMjAxNi0wNC0xNVQxODoyMzo1NS4wMDdaIiwiY29uZGl0aW9ucyI6W1siZXEiLCIkYnVja2V0IiwibXlidWNrZXQiXSxbImVxIiwiJGtleSIsIm15b3RoZXJvYmplY3QudHh0Il0sWyJlcSIsIiR4LWFtei1kYXRlIiwiMjAxNjA0MDhUMTgyMzU2WiJdLFsiZXEiLCIkeC1hbXotYWxnb3JpdGhtIiwiQVdTNC1ITUFDLVNIQTI1NiJdLFsiZXEiLCIkeC1hbXotY3JlZGVudGlhbCIsIlEzQU0zVVE4NjdTUFFRQTQzUDJGLzIwMTYwNDA4L3VzLWVhc3QtMS9zMy9hd3M0X3JlcXVlc3QiXV19 -F x-amz-algorithm=AWS4-HMAC-SHA256 -F x-amz-credential=Q3AM3UQ867SPQQA43P2F/20160408/us-east-1/s3/aws4_request -F key=myotherobject.txt -F file=@<FILE>
 ```
 
-### Sub-command `share list` - Share List
+#### Sub-command `share list` - Share List
 
 `share list` command lists unexpired URLs that were previously shared
 
@@ -445,8 +445,8 @@ COMMAND:
    download: list previously shared access to downloads.
 ```
 
-<a name="mirror">
-## Command `mirror` - Mirror Buckets
+<a name="mirror"></a>
+### Command `mirror` - Mirror Buckets
 
 `mirror` command is similar to `rsync`, except it synchronizes contents between filesystems and object storage.
 
@@ -467,8 +467,8 @@ $ mc mirror localdir/ play/mybucket
 localdir/b.txt:  40 B / 40 B  ┃▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓┃  100.00 % 73 B/s 0
 ```
 
-<a name="diff">
-## Command `diff` - Show Difference
+<a name="diff"></a>
+### Command `diff` - Show Difference
 
 ``diff`` command computes the differences between the two directories. It only lists the contents which are missing or which differ in size.
 
@@ -489,8 +489,8 @@ $  mc diff localdir play/mybucket
 ‘localdir/notes.txt’ and ‘https://play.minio.io:9000/mybucket/notes.txt’ - only in first.
 ```
 
-<a name="policy">
-## Command `policy` - Manage bucket policies
+<a name="policy"></a>
+### Command `policy` - Manage bucket policies
 Manage anonymous bucket policies to a bucket and its contents
 
 ```sh
@@ -531,8 +531,8 @@ $ mc policy none s3/andoria/myphotos/2020/bots/
 Access permission for ‘s3/andoria/myphotos/2020/bots/’ is set to 'none'
 ```
 
-<a name="session">
-## Command `session` - Manage Sessions
+<a name="session"></a>
+### Command `session` - Manage Sessions
 
 ``session`` command manages previously saved sessions for `cp` and `mirror` operations
 
@@ -574,8 +574,8 @@ $mc session clear ApwAxSwa
 Session ‘ApwAxSwa’ cleared successfully.
 ```
 
-<a name="config">
-## Command `config` - Manage Config File
+<a name="config"></a>
+### Command `config` - Manage Config File
 
 `config host` command provides a convenient way to manage host entries in your config file `~/.mc/config.json`. It is also OK to edit the config file manually using a text editor.  
 
@@ -602,8 +602,8 @@ $ mc config host add myminio http://localhost:9000 OMQAGGOL63D7UNVQFY8X GcY5RHNm
 $ set +o history
 ```
 
-<a name="update">
-## Command `update` - Software Updates
+<a name="update"></a>
+### Command `update` - Software Updates
 
 Check for new software updates from [https://dl.minio.io](https://dl.minio.io). Experimental flag checks for unstable experimental releases primarily meant for testing purposes.
 
@@ -623,8 +623,8 @@ $ mc update
 You are already running the most recent version of ‘mc’.
 ```
 
-<a name="version">
-## Command `version` - Display Version
+<a name="version"></a>
+### Command `version` - Display Version
 
 Display the current version of `mc` installed
 
