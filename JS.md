@@ -46,9 +46,9 @@ var s3Client = new Minio({
 
 ## 1.  Constructor
 
-<a name="MinioClient_endpoint">
+<a name="MinioClient_endpoint"></a>
 ####  new Minio ({endPoint, port, secure, accessKey, secretKey})
-</a>
+
 
 |     |
 | ---- |
@@ -154,10 +154,10 @@ var s3Client = new Minio({
 
 
 ## 2. Bucket operations
-<a name="makeBucket">
+<a name="makeBucket"></a>
 
 #### makeBucket(bucketName, region, callback)
-</a>
+
 
 Creates a new bucket.
 
