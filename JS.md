@@ -46,9 +46,9 @@ var s3Client = new Minio({
 
 ## 1.  Constructor
 
-<a name="MinioClient_endpoint"></a>
+<a name="MinioClient_endpoint">
 ####  new Minio ({endPoint, port, secure, accessKey, secretKey})
-
+</a>
 
 |     |
 | ---- |
@@ -154,10 +154,9 @@ var s3Client = new Minio({
 
 
 ## 2. Bucket operations
-<a name="makeBucket"></a>
-
-#### makeBucket(bucketName, region, callback)
-
+<a name="makeBucket">
+### makeBucket(bucketName, region, callback)
+</a>
 
 Creates a new bucket.
 
@@ -221,6 +220,7 @@ minioClient.makeBucket('mybucket', 'us-east-1', function(err) {
 
 <a name="listBuckets">
 #### listBuckets(callback)
+</a>
 
 Lists all buckets.
 
@@ -301,6 +301,7 @@ minioClient.bucketExists('mybucket', function(err) {
 ```
 <a name="removeBucket">
 #### removeBucket(bucketName, callback)
+</a>
 
 Removes a bucket.
 
