@@ -47,7 +47,7 @@ var s3Client = new Minio({
 ## 1.  Constructor
 
 <a name="MinioClient_endpoint">
-####  new Minio ({endPoint, port, secure, accessKey, secretKey})
+new Minio ({endPoint, port, secure, accessKey, secretKey})
 </a>
 
 |     |
@@ -155,7 +155,7 @@ var s3Client = new Minio({
 
 ## 2. Bucket operations
 <a name="makeBucket">
-### makeBucket(bucketName, region, callback)
+makeBucket(bucketName, region, callback)
 </a>
 
 Creates a new bucket.
@@ -219,7 +219,7 @@ minioClient.makeBucket('mybucket', 'us-east-1', function(err) {
 ```
 
 <a name="listBuckets">
-#### listBuckets(callback)
+listBuckets(callback)
 </a>
 
 Lists all buckets.
