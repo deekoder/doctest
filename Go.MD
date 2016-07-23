@@ -102,8 +102,8 @@ __Parameters__
     </thead>
     <tbody>
        <tr>
-       <td>bucketName</td>
-       <td>string </td>
+       <td><code>bucketName</code></td>
+       <td><i>string</i> </td>
        <td>name of the bucket</td>
        </tr>
         <tr>
