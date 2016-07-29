@@ -3,7 +3,7 @@
 
 
 Doctor is a documentation server which serves MD (markdown)  files from github. Using Doctor we can easily decouple 
-document serving and document contents in a clean manner. At Minio, we have several github repositories for our server, 
+document serving and document content in a clean manner. At Minio, we have several github repositories for our server, 
 client utility and SDKs. We also have full examples and recipes to help our developers onboard to our products. A simple UX which could categorize and display our content is what we needed. 
 
 ![Doctor](https://github.com/deekoder/doctest/blob/master/Doctor_Site.png?raw=true "Doctor Category Dashboard")
