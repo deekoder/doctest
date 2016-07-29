@@ -46,7 +46,7 @@ Document has the fields below
 * category_id
 * slug_name 
 
-Document Model does not hold the actual contents but only a name and link to the contents. The link field holds an URL to the raw MD file in github. category_id hold the category id in which the document belongs, so it honors the has_many/belongs_to relationship between these two models. Slug names are managed by a gem called friendl_id which generates vanity URL. This is very useful for SEO reasons.
+Document Model does not hold the actual contents but only a name and link to the contents. The link field holds an URL to the raw MD file in github. category_id hold the category id in which the document belongs, so it honors the has_many/belongs_to relationship between these two models. Slug names are managed by a gem called friendl_id which generates vanity URLs. This is very useful for SEO reasons.
 
 Why we decided to use links in Docto is because we really liked decoupling documents from the document server. We had pretty good documentation in github so we really wanted to maintain a single copy of md files that needed to be aggregated and presented to our users. 
  
