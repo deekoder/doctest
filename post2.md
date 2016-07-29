@@ -57,7 +57,7 @@ Why we decided to use links in Docto is because we really liked decoupling docum
 ![Documents]( https://github.com/deekoder/doctest/blob/master/Documents_2.png?raw=true "Doctor Documents Dashboard")
  
 ## Platformization
-To make it a real platform, we need to add the notion of users. We needed an admin user that is able to easily create categories and documents objects to set up the docs site. Hence we have User Model also. Right now in this release there is only the notion of an Administrator User, but the User model leaves room for possibilities to create types of Users such as Editors, Reviewer and Approvers for a later time. 
+To make it a real platform, we need to add the notion of users. We needed an admin user that is able to easily create categories and documents objects to set up the docs site. Hence we have an User model. Right now in this release there is only the notion of an administrator user, but the User model leaves room for possibilities to create types of users such as editors, reviewer and approvers for a later time. 
 
 Doctor is booted with a seed file which creates a default admin user. Users of Doctor can edit the db/seeds.rb file to change the admin user credentials. It may also be used to boot up the documentation site with categories and documents if one does not want to use the dashboard to do initial setup.
 
@@ -67,7 +67,7 @@ Doctor is booted with a seed file which creates a default admin user. Users of D
 
 Collaboration was another key requirement for us. We take a non trivial stand when it comes to having our community contribute 
 to our project. So we provide the "Suggest Edits" feature where any developer that uses our docs can suggest changes by clicking
-on Suggest Edits and sending us a simple PR with their changes. This was a feature we could not find in cloud hosted documentation solutions, Content Management Systems or Frameworks. 
+on Suggest Edits and sending us a simple PR with their changes. This was a feature we could not find in Cloud Hosted documentation solutions, Content Management Systems or Frameworks. 
 
 ## Customization
 There are 2 levels of customization possible in Doctor. One can edit Brand details from within the dashboard and change project 
