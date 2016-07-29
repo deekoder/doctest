@@ -3,17 +3,18 @@
 
 
 Doctor is a documentation server which serves MD (markdown)  files from github. Using Doctor we can easily decouple 
-document serving and document content in a clean manner. At Minio, we have several github repositories for our server, 
-client utility and SDKs. We also have full examples and recipes to help our developers onboard to our products. A simple UX which could categorize and display our content is what we needed. 
+document serving and document content in a clean manner. 
 
 ![Doctor](https://github.com/deekoder/doctest/blob/master/Doctor_Site.png?raw=true "Doctor Category Dashboard")
+
+At Minio, we have several github repositories for our server, client utility and SDKs. We also have full examples and recipes to help our developers onboard to our products. A simple UX which could categorize and display our content is what we needed. 
 
 Doctor is a rails app with a very simple architecture. The two main models in this project are Documents and Categories. 
 
 ## Category - Document Relationship 
 Category and Documents have what we refer to as has_many/belongs_to relationship.
 
-## Category Model
+### Category Model
 
 Category can be thought of as a logical folder that holds a collection of documents.
 
@@ -23,7 +24,7 @@ Category can be thought of as a logical folder that holds a collection of docume
 end
 ```
 
-## Document Model
+### Document Model
 
 Documents on the other hand are simply links that have a name and belong to a particular Category
 
@@ -34,35 +35,43 @@ end
 ``` 
 
 
-Now let's look at what columns make up Category and Model. Category has a title and a description fields. Document has name, description
-link and reference variable to category_id. This honors the has_many/belongs_to relationship between these two models. Why we 
-decided to use links alone is because we really liked decoupling documents from the document server. We had pretty good documentation
-in github so we really wanted to maintain a single copy of md files that needed to be aggregated and presented to our users. 
+Now let's look at what columns make up Category and Model. Category has the following fields :
+* title 
+* description  
+
+Document has the fields below
+* name
+* description
+* link 
+* category_id
+* slug_name 
+
+Document Model does not hold the actual contents but only a name and link to the contents. The link field holds an URL to the raw MD file in github. category_id hold the category id in which the document belongs, so it honors the has_many/belongs_to relationship between these two models. Slug names are managed by a gem called friendl_id which generates vanity URL. This is very useful for SEO reasons.
+
+Why we decided to use links in Docto is because we really liked decoupling documents from the document server. We had pretty good documentation in github so we really wanted to maintain a single copy of md files that needed to be aggregated and presented to our users. 
  
-### Category UX 
+#### Category UX 
 ![Category]( https://github.com/deekoder/doctest/blob/master/Category_2.png?raw=true "Doctor Category Dashboard")
 
-### Document UX
+#### Document UX
 ![Documents]( https://github.com/deekoder/doctest/blob/master/Documents_2.png?raw=true "Doctor Documents Dashboard")
  
 ## Platformization
-To make it a real platform, we need to add an admin user persona that is able to easily create categories and documents 
-objects to set up the docs site. Hence we have User Model also. Right now in this release there is only the notion of an
-Administrator User, but the User model leaves room for possibilities to create types of Users such as Editors, Reviewer
-and Approvers for a later time. Doctor is booted with a seed file which creates a default admin user. Users of Doctor can
-edit the db/seeds.rb file to change the admin user credentials.
+To make it a real platform, we need to add the notion of users. We needed an admin user that is able to easily create categories and documents objects to set up the docs site. Hence we have User Model also. Right now in this release there is only the notion of an Administrator User, but the User model leaves room for possibilities to create types of Users such as Editors, Reviewer and Approvers for a later time. 
+
+Doctor is booted with a seed file which creates a default admin user. Users of Doctor can edit the db/seeds.rb file to change the admin user credentials. It may also be used to boot up the documentation site with categories and documents if one does not want to use the dashboard to do initial setup.
 
 ### Admin Dashboard
 ![Admin]( https://github.com/deekoder/doctest/blob/master/DashBoard_2.png?raw=true "Admin Dashboard")
 
+
 Collaboration was another key requirement for us. We take a non trivial stand when it comes to having our community contribute 
 to our project. So we provide the "Suggest Edits" feature where any developer that uses our docs can suggest changes by clicking
-on Suggest Edits and sending us a simple PR with their changes. This was a feature we could not find in hosted solutions, 
-CMS solutions and frameworks. 
+on Suggest Edits and sending us a simple PR with their changes. This was a feature we could not find in cloud hosted documentation solutions, Content Management Systems or Frameworks. 
 
 ## Customization
 There are 2 levels of customization possible in Doctor. One can edit Brand details from within the dashboard and change project 
-name, links in the header and footer. See screenshot below :
+name, links in the header and the footer. See screenshot below :
 
 ### Brand Customizations
 ![Brand](https://github.com/deekoder/doctest/blob/master/brand.png?raw=true "Brand Dashboard")
@@ -130,13 +139,14 @@ $dark: #252b2f;
 ```
  
 ## Why did we build Doctor 
+
 We really wanted a simple way to render our documentation from github. We loved markdown since it was easy for our non developers
-to create/edit documentation. We didn't want to waste our precious resources to maintain multiple copies of documentation. We
+to create/edit documentation. We didn't want to waste our precious resources and maintain multiple copies of documentation. We
 needed to involve the community in making our documentation better. And finally we needed a nice looking site which would 
 champion our content, brand and licenses without any web gimmicks. After evaluating frameworks, CMS solutions and cloud hosted 
-platforms, we built our own simple platform. 
+platforms, we built our own simple platform.  
 
-Doctor enhancements and issue list can be found at https://github.com/minio/doctor/issues
+Your contributions to Doctor are welcome. Doctor enhancements and issue list can be found at https://github.com/minio/doctor/issues
 
 
  
