@@ -37,7 +37,7 @@ link and reference variable to category_id. This honors the has_many/belongs_to 
 decided to use links alone is because we really liked decoupling documents from the document server. We had pretty good documentation
 in github so we really wanted to maintain a single copy of md files that needed to be aggregated and presented to our users. 
  
-<screenshots> Category + Document to link to a category here. 
+screenshot : Category + Document to link to a category here. 
  
 ## Platformization
 To make it a real platform, we need to add an admin user persona that is able to easily create categories and documents 
@@ -46,7 +46,7 @@ Administrator User, but the User model leaves room for possibilities to create t
 and Approvers for a later time. Doctor is booted with a seed file which creates a default admin user. Users of Doctor can
 edit the db/seeds.rb file to change the admin user credentials.
 
-<screenshot> Admin Dashboard
+screenshot: Admin Dashboard
 
 Collaboration was another key requirement for us. We take a non trivial stand when it comes to having our community contribute 
 to our project. So we provide the "Suggest Edits" feature where any developer that uses our docs can suggest changes by clicking
@@ -57,7 +57,7 @@ CMS solutions and frameworks.
 There are 2 levels of customization possible in Doctor. One can edit Brand details from within the dashboard and change project 
 name, links in the header and footer. See screenshot below :
 
-<screenshot> Brand Changing
+screenshot: Brand Changing
 
 The second level of customization can be done on variables.scss file. You may change fonts, colors, backgrounds, text colors, borders
 sidebar to your needs. In the next version of Doctor some of these tuning will also be available through the dashboard.
