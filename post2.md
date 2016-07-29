@@ -6,6 +6,8 @@ Doctor is a documentation server which serves MD (markdown)  files from github. 
 document serving and document contents in a clean manner. At Minio, we have several github repositories for our server, 
 client utility and SDKs. We also have full examples and recipes to help our developers onboard to our products. A simple UX which could categorize and display our content is what we needed. 
 
+![Doctor](https://github.com/deekoder/doctest/blob/master/Doctor_Site.png?raw=true "Doctor Category Dashboard")
+
 Doctor is a rails app with a very simple architecture. The two main models in this project are Documents and Categories. 
 
 ## Category - Document Relationship 
@@ -37,7 +39,11 @@ link and reference variable to category_id. This honors the has_many/belongs_to 
 decided to use links alone is because we really liked decoupling documents from the document server. We had pretty good documentation
 in github so we really wanted to maintain a single copy of md files that needed to be aggregated and presented to our users. 
  
-screenshot : Category + Document to link to a category here. 
+### Category UX 
+![Category]( https://github.com/deekoder/doctest/blob/master/Category_2.png?raw=true "Doctor Category Dashboard")
+
+### Document UX
+![Documents]( https://github.com/deekoder/doctest/blob/master/Documents_2.png?raw=true "Doctor Documents Dashboard")
  
 ## Platformization
 To make it a real platform, we need to add an admin user persona that is able to easily create categories and documents 
@@ -46,7 +52,8 @@ Administrator User, but the User model leaves room for possibilities to create t
 and Approvers for a later time. Doctor is booted with a seed file which creates a default admin user. Users of Doctor can
 edit the db/seeds.rb file to change the admin user credentials.
 
-screenshot: Admin Dashboard
+### Admin Dashboard
+![Admin]( https://github.com/deekoder/doctest/blob/master/DashBoard_2.png?raw=true "Admin Dashboard")
 
 Collaboration was another key requirement for us. We take a non trivial stand when it comes to having our community contribute 
 to our project. So we provide the "Suggest Edits" feature where any developer that uses our docs can suggest changes by clicking
@@ -57,7 +64,8 @@ CMS solutions and frameworks.
 There are 2 levels of customization possible in Doctor. One can edit Brand details from within the dashboard and change project 
 name, links in the header and footer. See screenshot below :
 
-screenshot: Brand Changing
+### Brand Customizations
+![Brand](https://github.com/deekoder/doctest/blob/master/brand.png?raw=true "Brand Dashboard")
 
 The second level of customization can be done on variables.scss file. You may change fonts, colors, backgrounds, text colors, borders
 sidebar to your needs. In the next version of Doctor some of these tuning will also be available through the dashboard.
