@@ -3,8 +3,8 @@
 
 
 Doctor is a documentation server which serves MD (markdown)  files from github. Using Doctor we can easily decouple 
-document serving and the content in a clean manner. At Minio, we have several github repositories for our server, 
-client utility and SDKs. We also have full examples and recipes to help our developers onboard.
+document serving and document contents in a clean manner. At Minio, we have several github repositories for our server, 
+client utility and SDKs. We also have full examples and recipes to help our developers onboard to our products. A simple UX which could categorize and display our content is what we needed. 
 
 Doctor is a rails app with a very simple architecture. The two main models in this project are Documents and Categories. 
 
