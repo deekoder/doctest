@@ -10,6 +10,7 @@ sidebar to your needs. In the next version of Doctor some of these tuning will a
 
 ## Code Customizations
 For doing this, please fork the repository at https://github.com/minio/doctor and edit the variable.scss fiel
+
 ```css
 $body-bg: #fafafa;
 
