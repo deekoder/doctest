@@ -1,5 +1,24 @@
 # JavaScript Client API Reference [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Minio/minio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+
+```html
+<!-- Page Features -->
+<div class="row text-center">
+    {{#each url}}
+     <div class="col-md-3 col-sm-6 hero-feature">
+          <div class="thumbnail">
+               <img src="{{this}}" max-height=200 max-width=200 alt="">
+               <div class="caption">
+                     <h3>Product Name</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p> <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a> </p>
+                </div>
+           </div>
+      </div>
+  {{/each}}   
+ </div>
+```
+
 ## Initialize Minio Client object.  
 
 ## Minio
