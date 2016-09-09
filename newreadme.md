@@ -1,8 +1,8 @@
-<p align="center">
+ 
  
 ![Doctor](https://github.com/minio/doctor/blob/master/public/Doctor_logo_140.png?raw=true)
 
-</p>
+ 
 
 # Doctor
 * Doctor is a Documentation Server for all your project docs.
