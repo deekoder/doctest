@@ -1,5 +1,7 @@
 <p align="center">
-<img src="https://github.com/minio/doctor/blob/master/public/Doctor_logo_888x1024.png?raw=true" width="140px">
+ 
+![Doctor](https://github.com/minio/doctor/blob/master/public/Doctor_logo_140.png?raw=true)
+
 </p>
 
 # Doctor
