@@ -1,6 +1,6 @@
  
 <p align="center">
- <img src="https://github.com/minio/doctor/blob/master/public/Doctor_logo_512.png?raw=true" width="140px">
+ <img src="https://github.com/minio/doctor/blob/master/public/Doctor_logo_140.png?raw=true" width="140px">
 </p>
 
 # Doctor
