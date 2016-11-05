@@ -83,11 +83,16 @@ Start Minio Server as shown below.
 $ ./minio server export/
 
 ```
+Absolute Image Link Works! :
 ![Absolute Link](https://github.com/deekoder/doctest/blob/master/Category_2.png?raw=true) 
 ### Step 7: Visit https://churchofminio.com:9000 in the browser.
+Relative Image # 1 : 
 ![Relative Link 1](doctest/Category_2.png)
+Relative Image # 2 : 
 ![Relative Link 2](doctest/Category_2.png?raw=true) 
 
 Lets test if this is the fix for #241
+Relative Image # 3 : 
 ![Relative Link 3](doctest/blob/master/Category_2.png) 
-![Relative Link 3](doctest/blob/master/Category_2.png?raw=true) 
+Relative Image # 4 : 
+![Relative Link 4](doctest/blob/master/Category_2.png?raw=true) 
