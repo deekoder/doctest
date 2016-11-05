@@ -85,5 +85,5 @@ $ ./minio server export/
 ```
  
 ### Step 7: Visit https://churchofminio.com:9000 in the browser.
-[Relative to Github](/Category_2.png)
+[Relative to Github](doctest/Category_2.png)
 ![Remote](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser.jpg?raw=true)
