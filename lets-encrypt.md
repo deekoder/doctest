@@ -83,7 +83,7 @@ Start Minio Server as shown below.
 $ ./minio server export/
 
 ```
-![Local](icons/gitter.svg)
+![Local Server](icons/gitter.svg)
 ### Step 7: Visit https://churchofminio.com:9000 in the browser.
-[Local](doctest/Category_2.png)
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser.jpg?raw=true)
+[Relative to Github](Category_2.png)
+![Remote](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser.jpg?raw=true)
