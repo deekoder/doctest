@@ -3,11 +3,18 @@
 OpenEBS is a storage platform, written in GoLang, to deliver persistent block storage for container eco system. The storage itself is containerized through a storage POD concept called VSM or "Virtual Storage Machine". VSMs are scheduled and managed using an orchestrator engine called "Maya". VSMs are fully isolated user space storage engines that present the block storage at the front end through iSCSI, NBD or TCMU protocol and consume raw storage from a local OpenEBS host or remote storage.  
 
 #Components of OpenEBS platform
-
 OpenEBS platform contains three major components
-* Storage PODs or VSMs
-* An orchestration engine or VSM Scheduler called Maya
-* The OpenEBS hosts that provide the data store from either local disks or remote disks
+
+ * Storage PODs or VSMs
+ * An orchestration engine or VSM Scheduler called Maya
+ * The OpenEBS hosts that provide the data store from either local disks or remote disks
+
+# What is Doctor
+* Doctor is a Documentation Server for all your project docs.
+* Doctor beautifully decouples document serving and document contents.
+* Create your docs in markdown. Store them anywhere (github/dropbox/google drive/ anywhere really).
+* Login to Doctor's Dashboard. Setup links to your doc files in Doctor's Dashboard.
+* You are done!
 
 ![alt tag](https://raw.githubusercontent.com/openebs/openebs/master/docs/images/OpenEBS-intro-v1.jpg)
 
@@ -22,13 +29,14 @@ The backend data store for Jiva containers come either through locally managed d
 
 #Built with the best tools 
 OpenEBS uses the best available infrastructure libraries underneath. Jiva (means "life" in Sanskrit) is the core software that runs inside the storage container. The core functionalities of Jiva include : 
-* Block storage protocol (iSCSI/TCMU/NBD)
-* Replication
-* Snapshotting
-* Caching to NVMe
-* Encryption 
-* Backup/Restore
-* QoS 
+
+ * Block storage protocol (iSCSI/TCMU/NBD)
+ * Replication
+ * Snapshotting
+ * Caching to NVMe
+ * Encryption 
+ * Backup/Restore
+ * QoS 
 
 Jiva inherits majority of its capabilities from Rancher Longhorn (https://github.com/rancher/longhorn). QoS, Caching, Backup/Restore capabilities are being added to Jiva.
 
