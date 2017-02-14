@@ -61,14 +61,12 @@ You may need to restart your powershell console for this to take affect.
 Run the following command to create `private.key`
 
 ```
-
 certtool.exe --generate-privkey --outfile private.key 
-
 ```
 #### Generate public.crt
 Create a file `cert.cnf` with all the necessary information to generate a certificate.
-```
 
+```
 # X.509 Certificate options
 #
 # DN options
