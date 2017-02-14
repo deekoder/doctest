@@ -1,6 +1,8 @@
 # JavaScript Client API Reference [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Minio/minio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)[![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
 
-
+```
+mc ls
+```
 
 ```html
 <!-- Page Features -->
@@ -25,7 +27,6 @@
 ## Minio
 
 ```js
-
 var Minio = require('minio')
 
 var minioClient = new Minio({
@@ -35,13 +36,11 @@ var minioClient = new Minio({
     accessKey: 'Q3AM3UQ867SPQQA43P2F',
     secretKey: 'zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG'
 });
-
 ```
 
 ## AWS S3
 
 ```js
-
 var Minio = require('minio')
 
 var s3Client = new Minio({
@@ -49,7 +48,6 @@ var s3Client = new Minio({
 	  accessKey: 'YOUR-ACCESSKEYID',
 	  secretKey: 'YOUR-SECRETACCESSKEY'
 })
-
 ```
 
 | Bucket operations       | Object operations      | Presigned operations |
@@ -146,7 +144,6 @@ __Example__
 ## Minio
 
 ```js
-
 var Minio = require('minio')
 
 var minioClient = new Minio({
@@ -156,7 +153,6 @@ var minioClient = new Minio({
     accessKey: 'Q3AM3UQ867SPQQA43P2F',
     secretKey: 'zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG'
 });
-
 ```
 
 ## AWS S3
