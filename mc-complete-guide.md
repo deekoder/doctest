@@ -2,7 +2,8 @@
 
 Minio Client (mc) provides a modern alternative to UNIX commands like ls, cat, cp, mirror, diff etc. It supports filesystems and Amazon S3 compatible cloud storage service (AWS Signature v2 and v4).
 
-```sh
+```sh 
+
 ls            List files and folders.
 mb            Make a bucket or folder.
 cat           Display contents of a file.
@@ -17,6 +18,7 @@ session       Manage saved sessions of cp and mirror operations.
 config        Manage configuration file.
 update        Check for a new software update.
 version       Print version.
+
 ```
 
 ## 1.  Download Minio Client
@@ -38,10 +40,17 @@ Source installation is intended only for developers and advanced users. `mc upda
 
 If you do not have a working Golang environment, please follow [How to install Golang](./INSTALLGO.md).
 
+# With Space
+
+```sh
+
+$ go get -u github.com/minio/mc
+
+```
+# Without Space
 ```sh
 $ go get -u github.com/minio/mc
 ```
-
 ## 2. Run Minio Client
 
 ### 1. GNU/Linux
