@@ -5,6 +5,7 @@ first Map Application to start learning how to build Maps Apps.
 # Example
 
 ```html
+
 <html>
 <body>
 		<input type="button" value="Drop Pin" onclick="dropPin()"> Drop a pin marker on the map <br>
@@ -49,6 +50,7 @@ first Map Application to start learning how to build Maps Apps.
 		</script>
 </body>
 </html>
+
 ```
 
 # Learning Outcomes
