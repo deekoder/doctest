@@ -12,3 +12,8 @@ minio server
 ```sh
 minio server
 ```
+
+Hello
+```sh
+minio server
+```
