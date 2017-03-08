@@ -14,6 +14,6 @@ minio server
 ```
 
 Hello
-```sh
+```ruby
 minio server
 ```
