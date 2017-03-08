@@ -24,3 +24,5 @@ Hello
 ```ruby
 minio server
 ```
+
+![test](./Category_2.png)
