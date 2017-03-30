@@ -56,7 +56,7 @@ minio server http://192.168.1.11/export1 http://192.168.1.12/export2 \
                http://192.168.1.17/export7 http://192.168.1.18/export8
 ```
 
-![Distributed Minio, 8 nodes with 1 disk each](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/Architecture-diagram_distributed_8.png)
+![Distributed Minio, 8 nodes with 1 disk each](https://raw.githubusercontent.com/belvid/minio/dbfef8878b26397e76364801bf7356c48e8814a0/docs/screenshots/Architecture-diagram_distributed_8.svg)
 
 Example 2: Start distributed Minio instance with 4 drives each on 4 nodes, by running this command on all the 4 nodes.
 
@@ -73,7 +73,7 @@ minio server http://192.168.1.11/export1 http://192.168.1.11/export2 \
                http://192.168.1.14/export3 http://192.168.1.14/export4
 ```
 
-![Distributed Minio, 4 nodes with 4 disks each](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/Architecture-diagram_distributed_16.png)
+![Distributed Minio, 4 nodes with 4 disks each](https://raw.githubusercontent.com/belvid/minio/dbfef8878b26397e76364801bf7356c48e8814a0/docs/screenshots/Architecture-diagram_distributed_16.svg)
 
 ## 3. Test your setup
 
