@@ -103,7 +103,7 @@ minio.exe server http://192.168.1.11/C:/data1 http://192.168.1.11/C:/data2 ^
                   http://192.168.1.14/C:/data3 http://192.168.1.14/C:/data4
 ```
 
-![Distributed Minio, 4 nodes with 4 disks each](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/Architecture-diagram_distributed_16.png)
+![Distributed Minio, 4 nodes with 4 disks each](https://github.com/deekoder/doctest/blob/master/Architecture-diagram_distributed_16.png?raw=true)
 
 ## 3. Test your setup
 
