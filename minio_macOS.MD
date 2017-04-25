@@ -27,7 +27,7 @@ brew install minio/stable/minio
 
 ## Important Breaking Change
 
-> `brew upgrade minio` and/or `brew install minio` will not install the latest minio on macOS. We recommend you use the path `minio/stable/minio` in all your brew path.
+> `brew upgrade minio` and `brew install minio` commands will no longer install the latest minio on macOS. We recommend you update to using `minio/stable/minio` in all your brew paths.
 
 Minio does not work with go1.8 because of upstream bugs in golang such as https://github.com/golang/go/issues/19734 which are addressed in go1.8.1
 
