@@ -1,18 +1,19 @@
-*Minio Installation on macOS
 
-**Fresh Install
+# Minio Installation on macOS
 
-Installing Minio packages for macOS is done via brew. 
+## Fresh Install
+
+Install Minio packages for macOS via brew.
+
 ```
 brew install minio/stable/minio
 minio server ~/Photos
 ```
 
-**Upgrade 
-
-Minio used to be available on macOS with a simple `brew install minio`
+## Upgrade 
 
 Step 1: Uninstall minio if you installed it using `brew install minio`
+
 ```
 brew uninstall minio 
 
@@ -23,6 +24,13 @@ Once you remove minio completely from your system, proceed to do :
 
 ```
 brew install minio/stable/minio
+```
+
+* NOTE * 
+
+The following will not work :
+```
+brew upgrade minio
 ```
 
 Minio does not work with go 1.8 because of upstream bugs in golang such as https://github.com/golang/go/issues/19734.
