@@ -1,0 +1,23 @@
+Minio Server:
+  - title: Minio Server Quickstart Guide
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+  - title: Minio Distributed Quickstart Guide 
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+
+Minio Client:
+  - title: Minio Server Quickstart Guide
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+  - title: Minio Distributed Quickstart Guide 
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+
+Minio SDKs:
+  - title: Minio SDK Guide
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+  - title: Minio Distributed Quickstart Guide 
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+
+Minio Cookbook:
+  - title: Minio Cookbook Guide
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
+  - title: Minio Distributed Quickstart Guide 
+    link: https://raw.githubusercontent.com/minio/minio/master/README.md
